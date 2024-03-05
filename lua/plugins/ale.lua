@@ -4,6 +4,9 @@ return {
     init = function()
       vim.g.ale_fixers = {
         ruby = { "rubocop" },
+        javascript = { "prettier" },
+        css = { "prettier" },
+        twig = { "prettier" },
       }
       vim.g.ale_fix_on_save = 1
     end,
