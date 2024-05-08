@@ -7,6 +7,7 @@ return {
         javascript = { "prettier" },
         css = { "prettier" },
         twig = { "prettier" },
+        astro = { "prettier" },
       }
       vim.g.ale_fix_on_save = 1
     end,
