@@ -9,56 +9,56 @@ return {
       desc = "harpoon quick menu",
     },
     {
-      "<leader>hx",
+      "hx",
       function()
         require("harpoon.mark").add_file()
       end,
       desc = "harpoon add file",
     },
     {
-      "<leader>hn",
+      "hn",
       function()
         require("harpoon.ui").nav_next()
       end,
       desc = "harpoon next file",
     },
     {
-      "<leader>hp",
+      "hp",
       function()
         require("harpoon.ui").nav_prev()
       end,
       desc = "harpoon next file",
     },
     {
-      "<leader>ha",
+      "ha",
       function()
         require("harpoon.ui").nav_file(1)
       end,
       desc = "harpoon file 1",
     },
     {
-      "<leader>hs",
+      "hs",
       function()
         require("harpoon.ui").nav_file(2)
       end,
       desc = "harpoon file 2",
     },
     {
-      "<leader>hd",
+      "hd",
       function()
         require("harpoon.ui").nav_file(3)
       end,
       desc = "harpoon file 3",
     },
     {
-      "<leader>hf",
+      "hf",
       function()
         require("harpoon.ui").nav_file(4)
       end,
       desc = "harpoon file 4",
     },
     {
-      "<leader>hg",
+      "hg",
       function()
         require("harpoon.ui").nav_file(5)
       end,
