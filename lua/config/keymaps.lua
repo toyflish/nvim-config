@@ -3,6 +3,18 @@
 -- Add any additional keymaps here
 vim.keymap.set("x", "<leader>p", '"_dP')
 
+-- Copy relative file path and line number to clipboard
+local function copy_file_location()
+  local file_path = vim.fn.expand("%")
+  local line_number = vim.fn.line(".")
+  local location = file_path .. ":" .. line_number
+  vim.fn.setreg('"', location)
+  vim.fn.setreg("+", location)  -- Also copy to system clipboard
+  print("Copied: " .. location)
+end
+
+vim.keymap.set("n", "<leader>rl", copy_file_location, { desc = "Copy relative file path and line number" })
+
 -- Toggle inline diagnostics
 local diagnostics_enabled = true
 vim.keymap.set("n", "<leader>id", function()
